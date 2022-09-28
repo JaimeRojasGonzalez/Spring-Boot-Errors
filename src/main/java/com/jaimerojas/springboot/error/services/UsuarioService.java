@@ -1,0 +1,15 @@
+package com.jaimerojas.springboot.error.services;
+
+import java.util.List;
+import java.util.Optional;
+
+import com.jaimerojas.springboot.error.models.domain.Usuario;
+
+public interface UsuarioService {
+
+	public List<Usuario> listar();
+
+	public Usuario obtenerPorId(Integer id);
+	
+	public Optional<Usuario> obtenerPorIdOptional(Integer id);
+}
